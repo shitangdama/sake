@@ -1,0 +1,30 @@
+---
+name: account
+schema: public
+type: user # 用户创建的表
+columns:
+  - name: username
+    type: text
+  - name: age
+    type: int
+  # 
+relationships:
+  - name: role
+    relation_type: has_one
+    relation_scheme: role
+    # join_schenme: 
+    # foreign_key:
+    # references:
+    # join_foreign_key:
+    # join_references:
+    # foreignKey、references、joinforeignKey、joinReferences
+# ---
+# name: role
+# columns:
+#   - name: rolename
+#     type: string
+# ---
+# name: supplier
+# columns:
+#   - name: supplier_name
+#     type: string
